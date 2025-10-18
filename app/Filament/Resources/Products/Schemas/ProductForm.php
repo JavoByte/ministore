@@ -16,6 +16,7 @@ class ProductForm
                     ->multiple()
                     ->enableReordering()
                     ->image()
+                    ->visibility('public')
                     ->maxFiles(5),
                 TextInput::make('name')
                     ->required(),
